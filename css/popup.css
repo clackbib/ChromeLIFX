@@ -1,6 +1,9 @@
 .iblock{
 	display:inline-block;
-	width:500px;
+	width:375px;
 	min-height: 200px;
-	padding:10px;
+}
+
+.top-control{
+	margin-top:15px;
 }

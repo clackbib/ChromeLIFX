@@ -14,21 +14,29 @@
 	<div class = 'iblock'>
 		<div class= "container">
 			<div class = "row">
-   			    <a class="waves-effect waves-light btn col s1 red lighten-2 mdi-image-wb-incandescent" id ="toggle"></a>
-				<div class="col s8">
-			    	<select id = "lightSelect" class="browser-default">
-			      	    <option value="" disabled selected>Choose Lights</option>
-			      		<option value="1">Option 1</option>
-			      		<option value="2">Option 2</option>
-			      		<option value="3">Option 3</option>
+   			    <a class="waves-effect waves-light btn col s2 purple lighten-1 mdi-image-wb-incandescent top-control" id ="toggle"></a>
+				<div class=" input-field col s7">
+			    	<select id = "lightSelect">
+			      	    <option value="-1" disabled selected>Choose Light/Group</option>
 			        </select>
 			    </div>
-			    <a class="waves-effect waves-light btn col s3 red lighten-2 mdi-navigation-refresh"></a>
-		  </div>
+			    <a class="waves-effect waves-light btn col s2 purple lighten-1 mdi-navigation-refresh top-control" id = "refresh"></a>
+		    </div>
+			<p class="range-field">
+				  <label for = "hue">Hue</label>
+			      <input type="range" class="blue-text text-darken-2" id="hue" min="0" max="100" value = "100"/>
+		    </p>
+			<p class="range-field">
+				  <label for = "saturation">Saturation</label>
+			      <input type="range" class="purple lighten-1" id="saturation" min="0" max="100" value = "0"/>
+			</p>
+			<p class="range-field">
+				  <label for = "brightness">Brightness</label>
+			      <input type="range" class="purple lighten-1" id="brightness" min="0" max="100" value = "100"/>
+		    </p>
+		    
 			    
 		</div>
 	<div>
-		
-		<div id="theDiv"></div>
   </body>
 </html>
